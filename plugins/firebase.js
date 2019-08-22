@@ -1,6 +1,6 @@
 import firebase from 'firebase'
 
-if(!firebase.apps.length) {
+if (!firebase.apps.length) {
     firebase.initializeApp({
         apiKey: "AIzaSyCWgKHDAMoIxW7I8juUQJXvg265t7Ls79I",
         authDomain: "five-seven-five.firebaseapp.com",
