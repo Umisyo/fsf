@@ -16,10 +16,10 @@ export default {
                 .auth()
                 .signInWithPopup(provider)
                 .then(result => {
-                    console.log(result),
                     this.$store.dispatch('auth/setUser', {
                         uid: result.user.uid,
-                        userName: result.user.displayName
+                        userName: result.user.displayName,
+                        userIcon: result.user.photoURL
                     }),
                         this.$router.push('/')
                 })
